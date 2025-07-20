@@ -1,7 +1,10 @@
 name: Trigger Jenkins Job
 
+
 on:
   workflow_dispatch:
+  #push: # this two lines are extra for whenever you push code, this trigger will happen
+    #branches: [main] # whenever you push code, this trigger will happen
     
 jobs:
   trigger:
