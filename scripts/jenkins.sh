@@ -30,16 +30,19 @@ newgrp docker
 
 
 sudo apt install awscli -y #if not working
-#sudo apt-get remove awscli -y
-#curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-#sudo apt install unzip
-#unzip awscliv2.zip
-#sudo ./aws/install
-#aws --version
+sudo apt-get remove awscli -y
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
 
 
 sudo usermod -a -G docker jenkins
 
+# check docker version
+
+docker --version
 
 ## AWS configuration & restarts jenkins
 
